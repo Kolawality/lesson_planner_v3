@@ -1,0 +1,109 @@
+body {
+    background-color: #79cbb8;
+    color: #500472;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_container {
+    margin: 50px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 72px;
+    margin-left: 12px;
+    margin-top: 45px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-top: 135px;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 89px;
+}
+
+.form-label {
+    font-size: 18px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+form {
+    width: 100%;
+}
+
+.form_control {
+    background-color: #500472;
+    color: #79cbb8;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
+
+.next-btn,
+.back-btn,
+.submit-btn {
+    background-color: #500472;
+    border-radius: 30px;
+    color: #79cbb8;
+    font-size: 18px;
+    width: 271px;
+    height: 55px;
+    margin: 50px;
+}
+
+.btn:hover {
+    background-color: #79cbb8;
+    color: #500472;
+    border: solid #500472;
+}
+
+.objective_step-1 {
+    display: none;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.advice {
+    width: 30%;
+}
+
+#success_criteria_advice {
+    width: 30%
+}
+
+#lesson_time {
+    width: 100px;
+}
+
+.lesson_time_wrapper {
+    display: flex;
+    justify-content: center;
+}

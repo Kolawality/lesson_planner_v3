@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Lesson Plan</title>
+        <link rel="stylesheet" href="lessonplan.css" />
+        <script src="app.js"></script>
+        <script src="pdf.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <button class="download_pdf" id="download">download pdf</button>
+            <div class="page_container" id="lesson_plan">
+                <div id="title_container">
+                    <h1>Lesson Plan</h1>
+                </div>
+
+                <div>
+                    <p id="objective-label"><strong>Objective:</strong></p>
+                    <p id="objective-entered"></p>
+                </div>
+                <br />
+                <p id="sc-label"><strong>Success Criteria:</strong></p>
+                <div>
+                    1.
+                    <p class="successcriteria" id="success1"></p>
+                </div>
+                <div>
+                    2.
+                    <p class="successcriteria" id="success2"></p>
+                </div>
+                <div>
+                    3.
+                    <p class="successcriteria" id="success3"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

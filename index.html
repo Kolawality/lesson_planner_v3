@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>My Lesson Planning App Version 1</title>
+    </head>
+    <body>
+        <div class="title_container">
+            <h1>My Lesson Plan</h1>
+        </div>
+        <div class="main_wrapper">
+            <div class="main_container">
+                <!-- Step 1: Enter your lesson objective -->
+
+                <form action="./lessonplan.html" method="GET">
+                    <div class="step step-1 active">
+                        <div class="step-1_main section">
+                            <h2>What is the length of your lesson?</h2>
+                            </br>
+                            <div class="lesson_time_wrapper">
+                                    <input
+                                    class="form_control"
+                                    id="lesson_time"
+                                    name="lesson_time"
+                                ></input>
+                                minutes
+                            </div>
+
+
+
+                            <div class="btn_container">
+                                <!-- Next Button -->
+                                <button type="button" class="next-btn">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="step step-2">
+                        <div class="advice">
+                            <p><strong>Questions:</strong></p>
+                            <p>
+                                Does this learning connect with previous/future
+                                learning?
+                            </p>
+                            <p>
+                                Is the lesson objective manageable, measurable,
+                                made first and most important?
+                            </p>
+                            <p>
+                                What task can pupils complete at the end of the
+                                lesson to enable you to measure progress against
+                                the lesson objective?
+                            </p>
+                            <p><strong> Suggested activities: </strong></p>
+                            <p>1. Design the end of lesson assessment task</p>
+                            <p>2. Complete the end of lesson assessment task</p>
+                        </div>
+                        <div class="entry">
+                            <h2>What is your lesson objective?</h2>
+                            <br />
+
+                            <label for="objective" class="form-label">
+                                Students will be able to... </label
+                            ><br />
+                            <textarea
+                                class="form_control"
+                                id="objective"
+                                rows="3"
+                                name="objective"
+                            ></textarea
+                            ><br /><br /><br /><br />
+
+                            <label for="objective" class="form-label">
+                                What will be the end of lesson task </label
+                            ><br />
+                            <textarea
+                                class="form_control"
+                                id="task"
+                                rows="3"
+                                name="task"
+                            ></textarea>
+
+                            <div class="btn_container">
+                                <button type="button" class="back-btn">
+                                    Back
+                                </button>
+                                
+                                <button type="button" class="next-btn">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Enter the success criteria -->
+                    <div class="step step-3">
+                        <h4 id="success_criteria_advice">
+                            Success Criteria should refer to a concrete learning
+                            performance to indicate they are moving towads the
+                            lesson objective
+                            </br></br>
+                            Think about the end of lesson assessment task, what success criteria would pupils need to demonstrate in order to meet the lesson objective
+                        </h4>
+                        <div class="success_entry">
+                            <h2>State three Success Criteria</h2>
+                            <div>
+                                <label for="success1" class="form-label">
+                                    Success Criteria 1 </label
+                                ><br />
+                                <textarea
+                                    class="form_control"
+                                    id="success1"
+                                    rows="1"
+                                    name="success1"
+                                ></textarea>
+                            </div>
+                            <div>
+                                <label for="success2" class="form-label">
+                                    Success Criteria 2 </label
+                                ><br />
+                                <textarea
+                                    class="form_control"
+                                    id="success2"
+                                    rows="1"
+                                    name="success2"
+                                ></textarea>
+                            </div>
+                            <!-- 3rd Success Criteria -->
+                            <div>
+                                <label for="success3" class="form-label">
+                                    Success Criteria 3 </label
+                                ><br />
+                                <textarea
+                                    class="form_control"
+                                    id="success3"
+                                    rows="1"
+                                    name="success3"
+                                ></textarea>
+                            </div>
+
+                            <div class="btn_container">
+                                <button type="button" class="back-btn">
+                                    Back
+                                </button>
+
+                                <!-- Submit Button -->
+
+                                <button class="submit-btn" formtarget="_blank">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
