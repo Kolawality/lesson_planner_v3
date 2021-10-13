@@ -18,7 +18,7 @@ function changeStep(btn) {
     let index = 0;
     const active = document.querySelector("form .step.active");
     index = steps.indexOf(active);
-    // steps[index].classList.remove("active");
+    steps[index].classList.remove("active");
     if (btn === "next") {
         index = index + 1;
     } else if(btn === 'prev'){
