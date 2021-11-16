@@ -108,18 +108,17 @@ form {
     justify-content: center;
 }
 
-/* Progress Bar */
-
-.progress_bar img {
-    width: 80px;
-    margin-bottom: 5px;
+/* The Progress Bar */
+.circle_active img {
+    width: 35%;
+    height: 70%;
 }
 
-ul {
-    text-align: center;
-}
-
-ul li {
-    display: inline-block;
-    width: 200px;
+.progress_bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
 }
