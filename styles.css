@@ -109,9 +109,11 @@ form {
 }
 
 /* The Progress Bar */
-.circle_active img {
-    width: 35%;
-    height: 70%;
+.circle img {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
 }
 
 .progress_bar {
@@ -121,4 +123,49 @@ form {
     margin-bottom: 30px;
     max-width: 100%;
     width: 350px;
+}
+
+/* #9c27b0
+#bdbdbd */
+
+.progress_bar::before {
+    content: "";
+    background-color: #bdbdbd;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.progress {
+    background-color: #500472;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle {
+    background-color: #79cbb8;
+    color: #999;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+.circle.active {
+    border-color: #500472;
 }
